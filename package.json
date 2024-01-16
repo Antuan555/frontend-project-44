@@ -5,7 +5,7 @@
   "type": "module",
   "main": "brain-games.js",
   "bin": {
-	"brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "scripts": {
     "test": "node bin/brain-games.js"
@@ -22,5 +22,19 @@
   "bugs": {
     "url": "https://github.com/Antuan555/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/Antuan555/frontend-project-44#readme"
+  "homepage": "https://github.com/Antuan555/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-vue": "^9.20.1",
+    "typescript": "^5.3.3"
+  }
 }
