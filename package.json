@@ -1,0 +1,26 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "bin",
+  "type": "module",
+  "main": "brain-games.js",
+  "bin": {
+	"brain-games": "bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "node bin/brain-games.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Antuan555/frontend-project-44.git"
+  },
+  "keywords": [
+    "Shutnica55"
+  ],
+  "author": "Anton Yaroshevskii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antuan555/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/Antuan555/frontend-project-44#readme"
+}
