@@ -15,3 +15,5 @@ brain-calc:
 	node bin/brain-calc.js
 index:
 	node bin/index.js
+brain-gcd:	
+	node bin/games/brain-gcd.js
