@@ -1,14 +1,10 @@
-import readlineSync from 'readline-sync';
+import { finish, start } from '../index.js';
 
-const brainGames = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+const body = () => {
+  const name = start();
   console.log('Find the greatest common divisor of given numbers.');
-  let correctAnswer = 0;
-  let corAn = 0;
-  for (let i = 0; correctAnswer < 3; i += 1) {
-    // Тело цикла
+  let correctAnswers = 0;
+  for (let i = 0; i < 3; i += 1) {
     let a = Math.floor(Math.random() * 150);
     let b = Math.floor(Math.random() * 150);
     console.log(`Question: ${a} ${b}`);
@@ -19,20 +15,13 @@ const brainGames = () => {
         b %= a;
       }
     }
-    corAn = a + b;
-    // Конец тела цикла
-    const answer = readlineSync.question('Your answer: ');
-    if (Number(answer) === corAn) {
-      correctAnswer += 1;
-      console.log('Correct!');
-    } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${corAn}'.`);
-      console.log(`Let's try again, ${name}!`);
+    const result = (a + b).toString();
+    const fin = finish(correctAnswers, result, name);
+    if (fin === false) {
       break;
+    } else {
+      correctAnswers += 1;
     }
   }
-  if (correctAnswer === 3) {
-    console.log(`Congratulations, ${name}!`);
-  }
 };
-brainGames();
+body();
