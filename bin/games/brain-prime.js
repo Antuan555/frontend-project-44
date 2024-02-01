@@ -1,8 +1,7 @@
+#!/usr/bin/env node
 import { start, finish } from '../index.js';
 
 const prime = () => {
-  console.log('brain-prime');
-  console.log('');
   const name = start();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   let correctAnswers = 0;

@@ -16,7 +16,7 @@ index:
 	node bin/index.js
 brain-gcd:	
 	node bin/games/brain-gcd.js
-brain-prog:
+brain-progression:
 	node bin/games/brain-progression.js
 brain-prime:
 	node bin/games/brain-prime.js

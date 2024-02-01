@@ -1,8 +1,7 @@
+#!/usr/bin/env node
 import { start, finish } from '../index.js';
 
 const progression = () => {
-  console.log('brain-progression');
-  console.log('');
   const name = start();
   console.log('What number is missing in the progression?');
   const prog = [];
