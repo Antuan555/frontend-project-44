@@ -21,4 +21,4 @@ const correctNumber = () => {
     }
   }
 };
-correctNumber();
+console.log(correctNumber());
