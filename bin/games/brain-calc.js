@@ -1,6 +1,8 @@
 import { finish, start } from '../index.js';
 
 const body = () => {
+  console.log('brain-calc');
+  console.log('');
   const name = start();
   console.log('What is the result of the expression?');
   let correctAnswers = 0;

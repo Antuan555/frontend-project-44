@@ -1,6 +1,8 @@
 import { finish, start } from '../index.js';
 
 const body = () => {
+  console.log('brain-gcd');
+  console.log('');
   const name = start();
   console.log('Find the greatest common divisor of given numbers.');
   let correctAnswers = 0;

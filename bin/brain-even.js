@@ -1,6 +1,8 @@
 import { finish, start } from './index.js';
 
 const correctNumber = () => {
+  console.log('brain-even');
+  console.log('');
   const name = start();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let an1 = '';
@@ -21,4 +23,4 @@ const correctNumber = () => {
     }
   }
 };
-console.log(correctNumber());
+correctNumber();
