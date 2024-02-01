@@ -17,3 +17,5 @@ index:
 	node bin/index.js
 brain-gcd:	
 	node bin/games/brain-gcd.js
+brain-prog:
+	node bin/games/brain-progression.js
