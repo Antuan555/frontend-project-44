@@ -1,4 +1,4 @@
-import { finish, start } from '../index.js';
+import { finish, start } from './index.js';
 
 const correctNumber = () => {
   const name = start();

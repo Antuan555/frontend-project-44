@@ -9,7 +9,7 @@ lint:
 lint-fix:
 	npx eslint . --fix
 brain-even:
-	node bin/games/brain-even.js
+	node bin/brain-even.js
 brain-calc:
 	node bin/games/brain-calc.js
 index:
