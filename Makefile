@@ -1,6 +1,5 @@
 install: 
 	npm ci
-
 brain-games:
 	node bin/brain-games.js
 publish:
@@ -19,3 +18,5 @@ brain-gcd:
 	node bin/games/brain-gcd.js
 brain-prog:
 	node bin/games/brain-progression.js
+brain-prime:
+	node bin/games/brain-prime.js

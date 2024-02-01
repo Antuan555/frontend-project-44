@@ -10,7 +10,8 @@
 	"brain-calc": "bin/games/brain-calc.js",
 	"index": "bin/index.js",
 	"brain-gcd": "bin/games/brain-gcd.js",
-	"brain-prog": "bin/games/brain-progression.js"
+	"brain-prog": "bin/games/brain-progression.js",
+	"brain-prime": "bin/games/brain-prime.js"
   },
   "scripts": {
     "test": "node bin/brain-games.js"
