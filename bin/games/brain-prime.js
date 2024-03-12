@@ -1,12 +1,11 @@
 #!/usr/bin/env node
-import { start, finish } from '../index.js';
+import { start, finish } from '../../src/index.js';
 
 const prime = () => {
   const name = start();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  let correctAnswers = 0;
-  let result;
-  for (let i = 0; i < 3; i += 1) {
+  const result = () => {
+    let result1;
     const a = Math.floor(Math.random() * 1000);
     console.log(`Question: ${a}`);
     let num = 0;
@@ -16,16 +15,12 @@ const prime = () => {
       }
     }
     if (num === 2) {
-      result = 'yes';
+      result1 = 'yes';
     } else {
-      result = 'no';
+      result1 = 'no';
     }
-    const fin = finish(correctAnswers, result, name);
-    if (fin === false) {
-      break;
-    } else {
-      correctAnswers += 1;
-    }
-  }
+    return result1;
+  };
+  finish(result, name);
 };
 prime();

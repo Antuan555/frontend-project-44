@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-import { finish, start } from '../index.js';
+import { finish, start } from '../../src/index.js';
 
 const body = () => {
   const name = start();
   console.log('Find the greatest common divisor of given numbers.');
-  let correctAnswers = 0;
-  for (let i = 0; i < 3; i += 1) {
+  const result1 = () => {
     let a = Math.floor(Math.random() * 150);
     let b = Math.floor(Math.random() * 150);
     console.log(`Question: ${a} ${b}`);
@@ -17,12 +16,8 @@ const body = () => {
       }
     }
     const result = (a + b).toString();
-    const fin = finish(correctAnswers, result, name);
-    if (fin === false) {
-      break;
-    } else {
-      correctAnswers += 1;
-    }
-  }
+    return result;
+  };
+  finish(result1, name);
 };
 body();

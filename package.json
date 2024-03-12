@@ -12,9 +12,6 @@
 	"brain-progression": "bin/games/brain-progression.js",
 	"brain-prime": "bin/games/brain-prime.js"
   },
-  "src": {
-	"index": "index.js"
-  },
   "scripts": {
     "test": "node bin/brain-games.js"
   },

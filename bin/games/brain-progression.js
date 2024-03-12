@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-import { start, finish } from '../index.js';
+import { start, finish } from '../../src/index.js';
 
 const progression = () => {
   const name = start();
   console.log('What number is missing in the progression?');
   const prog = [];
-  let correctAnswers = 0;
-  for (let i = 0; i < 3; i += 1) {
+  const result = () => {
+    prog.length = 0;
     const d = Math.floor(Math.random() * 10 + 1);
     const a1 = Math.floor(Math.random() * 15);
     const range = Math.floor(Math.random() * 10 + 5);
@@ -16,16 +16,11 @@ const progression = () => {
     }
     const index = Math.floor(Math.random() * range);
     const num = prog[index];
-    const result = num.toString();
+    const result1 = num.toString();
     prog[index] = '..';
     console.log(`Question: ${prog.join(' ')}`);
-    const fin = finish(correctAnswers, result, name);
-    if (fin === false) {
-      break;
-    } else {
-      correctAnswers += 1;
-      prog.length = 0;
-    }
-  }
+    return result1;
+  };
+  finish(result, name);
 };
 progression();

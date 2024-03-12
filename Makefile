@@ -13,7 +13,7 @@ brain-even:
 brain-calc:
 	node bin/games/brain-calc.js
 index:
-	node src/index.js
+	node bin/src/index.js
 brain-gcd:	
 	node bin/games/brain-gcd.js
 brain-progression:

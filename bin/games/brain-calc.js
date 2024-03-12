@@ -1,11 +1,10 @@
-#!/usr/bin/env node
-import { finish, start } from 'src/index.js';
+#!/usr/env node
+import { finish, start } from '../../src/index.js';
 
 const body = () => {
   const name = start();
   console.log('What is the result of the expression?');
-  let correctAnswers = 0;
-  for (let i = 0; i < 3; i += 1) {
+  const body1 = () => {
     const randomOp = ['+', '-', '*'];
     const index = Math.floor(Math.random() * randomOp.length);
     const result = randomOp[index];
@@ -25,12 +24,8 @@ const body = () => {
         term2 = (ranNum1 * ranNum2).toString();
         break;
     }
-    const fin = finish(correctAnswers, term2, name);
-    if (fin === false) {
-      break;
-    } else {
-      correctAnswers += 1;
-    }
-  }
+    return term2;
+  };
+  finish(body1, name);
 };
 body();
