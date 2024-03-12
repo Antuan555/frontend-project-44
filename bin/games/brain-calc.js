@@ -1,4 +1,4 @@
-#!/usr/env node
+#!/usr/bin/env node
 import { finish, start } from '../../src/index.js';
 
 const body = () => {
