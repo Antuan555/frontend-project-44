@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { finish, start } from './index.js';
+import { finish, start } from '../../src/index.js';
 
 const correctNumber = () => {
   const name = start();
